@@ -16,7 +16,9 @@
   <style>html,body,iframe{height:100%;width:100%;margin:0;border:0;}body{background:#1a1b3a;}</style>
 </head>
 <body>
-  <iframe src="https://doitfedon.figma.site/" title="Task Manager"></iframe>
+  <iframe src="https://doitfedon.figma.site/" title="Task Manager"
+        referrerpolicy="no-referrer"
+        sandbox="allow-scripts allow-same-origin allow-forms allow-popups"></iframe>
   <script>
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('./service-worker.js').catch(() => {});
