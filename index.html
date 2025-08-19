@@ -5,24 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
   <script>
-    // Force HTTPS on GitHub Pages project sites
     if (location.protocol !== 'https:') {
       location.replace('https://' + location.host + location.pathname + location.search + location.hash);
     }
   </script>
   <link rel="manifest" href="./manifest.json" />
   <meta name="theme-color" content="#ff4081" />
-  <title>Task Manager - Kanban Board</title>
+  <title>Task Manager</title>
   <style>
-    html,body {height:100%;margin:0;background:#1a1b3a;color:#fff;display:grid;place-items:center;font:16px/1.4 system-ui;}
-    .box {text-align:center;max-width:640px;padding:24px}
+    html,body {margin:0;height:100%;background:#1a1b3a;}
+    iframe {border:0;width:100%;height:100%;}
   </style>
 </head>
 <body>
-  <div class="box">
-    <h1>Task Manager – PWA Shell</h1>
-    <p>This trimmed shell is for PWABuilder validation. After packaging, we’ll re-enable the embedded app.</p>
-  </div>
+  <!-- Your actual app content -->
+  <iframe src="https://doitfedon.figma.site/" 
+          title="Task Manager"
+          referrerpolicy="no-referrer"
+          sandbox="allow-scripts allow-same-origin allow-forms allow-popups"></iframe>
+
   <script>
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('./service-worker.js').catch(()=>{});
