@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="manifest" href="/manifest.json" />
+  <link rel="manifest" href="./manifest.json" />
   <meta name="theme-color" content="#ff4081" />
   <title>Task Manager - Kanban Board</title>
   <style>html,body,iframe{height:100%;width:100%;margin:0;border:0;}body{background:#1a1b3a;}</style>
@@ -11,9 +11,10 @@
 <body>
   <iframe src="https://doitfedon.figma.site/" title="Task Manager"></iframe>
   <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/service-worker.js').catch(()=>{});
-    }
-  </script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./service-worker.js').catch(() => {});
+  }
+</script>
+
 </body>
 </html>
