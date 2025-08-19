@@ -1,36 +1,42 @@
 {
+  "id": "https://prodigymicmic.github.io/doitfedon-pwa/",
   "name": "Task Manager - Kanban Board",
   "short_name": "TaskManager",
   "description": "A powerful task management app with kanban board, team collaboration, and offline support",
-  "start_url": "https://doitfedon.figma.site/",
-  "scope": "https://doitfedon.figma.site/",
+  "start_url": "https://prodigymicmic.github.io/doitfedon-pwa/",
+  "scope": "https://prodigymicmic.github.io/doitfedon-pwa/",
   "display": "standalone",
   "background_color": "#1a1b3a",
   "theme_color": "#ff4081",
   "orientation": "portrait-primary",
   "lang": "en-US",
   "dir": "ltr",
-  "categories": [
-    "productivity",
-    "business",
-    "utilities"
-  ],
+  "categories": ["productivity", "business", "utilities"],
   "icons": [
     {
-      "src": "/icons/icon.png",
+      "src": "icons/icon-192x192.png",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
     },
     {
-      "src": "/icons/icon.png",
+      "src": "icons/icon-512x512.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
     },
     {
-      "src": "/icons/icon.png",
+      "src": "icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/apple-touch-icon-180x180.png",
       "sizes": "180x180",
       "type": "image/png",
       "purpose": "apple-touch-icon"
     }
-  ]
+  ],
+  "launch_handler": { "client_mode": "navigate-existing" }
 }
